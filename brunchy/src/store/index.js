@@ -7,6 +7,9 @@ const orderSlice = createSlice({
     addOrder(state, action) {
       state.push(action.payload);
     },
+    clearOrder(state, action) {
+      state.splice(0, state.length);
+    },
   },
 });
 
@@ -18,4 +21,4 @@ const store = configureStore({
 
 export { store };
 
-export const { addOrder } = orderSlice.actions;
+export const { addOrder, clearOrder } = orderSlice.actions;
