@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 const Header = () => {
   return (
     <div className={styles.container}>
-        <h1 className={styles.header}>Header</h1>
+        <h1 className={styles.header}>Brunchy</h1>
         <div className={styles.wrapper}>
             <a href='https://www.dreamshot.bg/' target="__blank"
                 rel="noopener noreferrer" className={styles.link}>About</a>
