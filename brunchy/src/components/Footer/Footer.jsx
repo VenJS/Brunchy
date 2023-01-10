@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import ReviewList from '../ReviewList/ReviewList';
 import PlaceOrder from '../PlaceOrder/PlaceOrder';
 import styles from './Footer.module.scss'
+import { useSelector } from 'react-redux'
 
 const Footer = () => {
 
@@ -16,12 +17,26 @@ const Footer = () => {
     setOrderCreated(false)
   }
 
+  const handleOrderNow = () => {
+    setIsOpened(false)
+    setOrderCreated(true)
+  };
+
+  const orderList = useSelector((state) => {
+    return state.orders
+})
+
+
   return (
     <div className={styles.container} >
         <img src='/shopping-basket.png' alt='' className={styles.image} onClick={() => setIsOpened(true)}></img>
         <span className={styles.price}>0.00$</span>
         <button className={styles.button} onClick={() => setOrderCreated(true)}>Order Now</button>
-        {isOpened ? <ReviewList onClose={handleCloseReviewList}/> : null}
+        {isOpened ? orderList.map((order, idx) => {
+          return (
+            <ReviewList onClose={handleCloseReviewList} orderNow={handleOrderNow} orderList={orderList}/>
+          )
+        }): null}
         {orderCreated ? <PlaceOrder onClose={handleClosePlaceOrderModal}/> : null}
     </div>
   )

@@ -18,7 +18,6 @@ const App = () => {
     fetchedData();
   }, []);
 
-  console.log(data);
   return (
     <div className={styles.container}>
       <Header></Header>
