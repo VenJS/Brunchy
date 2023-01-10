@@ -1,3 +1,7 @@
+### Summary
+
+The project is created by using the create-react-app boilerplate, then adding redux, react-redux and redux toolkit for the global state management. CSS modules with sass are also used for more convenient styling. Responsive design is implemented. The project is deployed on Vercel.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
