@@ -2,7 +2,6 @@
     position: absolute;
     background-color: rgba(255, 255, 255, 0.84);
     backdrop-filter: blur(2px);
-    z-index: 100;
     top: 0;
     bottom: 0;
     right: 0;
@@ -19,6 +18,7 @@
     width: 20%;
     height: auto;
     align-items: center;
+    z-index: 100;
 }
 
 .products {
