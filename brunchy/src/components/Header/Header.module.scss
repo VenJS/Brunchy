@@ -5,6 +5,7 @@
     color: #363636;
 }
 
+
 .link {
     text-decoration: none;
     color: #797979;
@@ -16,15 +17,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8.75rem;
+    padding: 0 2.75rem;
     position: sticky;
 }
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     align-items: center;
-    padding-right: 6rem;
+    margin-top: 5rem;
+}
+
+
+.links {
+    display: flex;
+    gap: 1rem;
 }
 
 .free_delivery {
@@ -45,4 +53,28 @@
 .icon {
     position: absolute;
     right: -2.7rem;
+}
+
+@media (min-width: 31rem) {
+    .container {
+        padding: 0 2rem 0 4rem;
+    }
+}
+
+@media (min-width: 35rem) {
+    .wrapper {
+        padding-right: 2rem;
+        flex-direction: row;
+        margin-top: 0;
+    } 
+}
+
+@media (min-width: 54rem) {
+    .container {
+        padding: 0 8.75rem;
+    }
+
+    .wrapper {
+        padding-right: 6rem;
+    }
 }

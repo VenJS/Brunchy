@@ -1,10 +1,11 @@
 .card-container {
     display: flex;
     gap: 3.5rem;
-    padding-left: 8.75rem;
+    padding-left: 2.75rem;
     overflow: scroll;
     overflow-y: hidden;
 }
+
 
 .card-container::-webkit-scrollbar {
     width: 0; 
@@ -16,4 +17,17 @@
     flex-direction: column;
     gap: 2rem;
     position: relative;
+}
+
+
+@media (min-width: 31rem) {
+    .card-container {
+        padding-left: 4rem;
+    }
+}
+
+@media (min-width: 54rem) {
+    .card-container {
+        padding-left: 8.75rem;
+    }
 }

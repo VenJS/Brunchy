@@ -11,10 +11,10 @@
 .modal {
     background-color: #F9F6F6;
     position: absolute;
-    right: 33%;
+    right: 5%;
     top: 40%;
     padding: 5rem 0;
-    width: 38rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,4 +48,18 @@
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 4rem;
+}
+
+@media (min-width: 31rem) {
+    .modal {
+        width: 70%;
+        right: 15%;
+    }
+}
+
+@media (min-width: 54rem) {
+    .modal {
+        width: 40%;
+        right: 28%;
+    }
 }

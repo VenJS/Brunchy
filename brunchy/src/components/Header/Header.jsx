@@ -6,11 +6,12 @@ const Header = () => {
     <div className={styles.container}>
         <h1 className={styles.header}>Brunchy</h1>
         <div className={styles.wrapper}>
-            <a href='https://www.dreamshot.bg/' target="__blank"
+            <div className={styles.links}>
+                <a href='https://www.dreamshot.bg/' target="__blank"
                 rel="noopener noreferrer" className={styles.link}>About</a>
-            <a href='https://www.dreamshot.bg/' target="__blank"
+                <a href='https://www.dreamshot.bg/' target="__blank"
                 rel="noopener noreferrer" className={styles.link}>Call us</a>
-            
+            </div>
             <div className={styles['free_delivery_logo']}>
                 <span className={styles['free_delivery']}>Free Delivery</span>
                 <img src='/delivery.png' alt='' className={styles.icon}></img>

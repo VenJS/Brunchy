@@ -1,13 +1,13 @@
 .container {
     background-color: #F9F6F6;
-    width: 27.75rem;
-    padding: 1rem;
     border-radius: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 3rem 0 3.375rem ;
-    align-self: center;
+    margin-bottom: 3.375rem;
+    margin-left: 2.25rem;
+    padding: 1rem;
+    width: 80%;
     z-index: 150;
 }
 
@@ -32,4 +32,21 @@
     font-weight: 700;
     padding: 1rem;
     cursor: pointer;
+}
+
+
+@media (min-width: 31rem) {
+    .container {
+        margin-left: 4.25rem;
+        align-self: center;
+        width: 60%;
+    }
+}
+
+@media (min-width: 54rem) {
+    .container {
+        width: 27.75rem;
+        margin: 3rem 0 3.375rem ;
+        
+    }
 }

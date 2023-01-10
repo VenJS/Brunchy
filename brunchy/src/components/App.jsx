@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Header from "./Header/Header";
 import Heading from "./Heading/Heading";
 import Card from "./Card/Card";
@@ -7,6 +7,8 @@ import styles from './App.module.scss';
 
 const App = () => {
   const [data, setData] = useState([]);
+
+  const ref = useRef();
   
 
   useEffect(() => {
@@ -22,7 +24,7 @@ const App = () => {
     <div className={styles.container}>
       <Header></Header>
       <Heading></Heading>
-      <div className={styles['card-container']}>
+      <div className={styles['card-container']} ref={ref}>
       {data.map((arr) => {
         return (
           <Card
