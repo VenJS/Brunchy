@@ -1,0 +1,46 @@
+.header {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #797979;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8.75rem;
+}
+
+.wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-right: 6rem;
+}
+
+.free_delivery {
+    color: #F17C0F;
+    font-weight: 600;
+    background: #FFE5CD;
+    padding: 1rem 3rem 1rem 1rem;
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+}
+
+.free_delivery_logo {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: -2.7rem;
+}
