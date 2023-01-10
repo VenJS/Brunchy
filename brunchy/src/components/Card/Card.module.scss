@@ -1,0 +1,57 @@
+.container { 
+    background-color: #F9F6F6;
+    width: 14.313rem;
+    height: 16.875rem;
+    border-radius: 1.875rem;
+    position: relative;
+}
+
+.food-image {
+    height: 7.5rem;
+    position: absolute;
+    right: -1rem;
+    top: -2rem;
+}
+
+.food-title {
+    margin: 0;
+}
+
+.description {
+    margin: 0;
+    color: #797979;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    gap: 1rem;
+}
+
+.basket { 
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.dollar-sign {
+    font-size: 0.938rem;
+    color: #FF8515;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #363636;
+}
+
+.price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
