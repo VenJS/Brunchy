@@ -6,11 +6,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 3rem 0 3.375rem 8.75rem;
+    align-self: center;
 }
 
 .image {
     width: 1.875rem;
     height: 1.875rem;
+    cursor: pointer;
 }
 
 .price {
@@ -27,4 +30,5 @@
     font-size: 1.25rem;
     font-weight: 700;
     padding: 1rem;
+    cursor: pointer;
 }

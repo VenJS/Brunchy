@@ -4,6 +4,7 @@
     height: 16.875rem;
     border-radius: 1.875rem;
     position: relative;
+    margin-top: 2rem;
 }
 
 .food-image {
@@ -29,6 +30,7 @@
     align-items: center;
     padding-top: 7rem;
     gap: 1rem;
+    width: 14.313rem;
 }
 
 .basket { 
@@ -36,6 +38,7 @@
     width: 2.5rem;
     position: absolute;
     right: 1rem;
+    cursor: pointer;
 }
 
 .dollar-sign {
