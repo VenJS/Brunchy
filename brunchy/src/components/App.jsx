@@ -1,15 +1,13 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header/Header";
 import Heading from "./Heading/Heading";
 import Card from "./Card/Card";
 import Footer from "./Footer/Footer";
 import styles from './App.module.scss';
 
-const App = () => {
-  const [data, setData] = useState([]);
 
-  const ref = useRef();
-  
+const App = () => {
+  const [data, setData] = useState([]);  
 
   useEffect(() => {
     const fetchedData = async () => {
@@ -20,22 +18,23 @@ const App = () => {
     fetchedData();
   }, []);
 
+
   return (
     <div className={styles.container}>
       <Header></Header>
       <Heading></Heading>
-      <div className={styles['card-container']} ref={ref}>
-      {data.map((arr) => {
-        return (
-          <Card
-            name={arr.name}
-            description={arr.caption}
-            price={arr.price}
-            image={arr.image}
-            key={arr.name}
-          ></Card>
-        );
-      })}
+      <div className={styles['card-container']}>
+          {data.map((arr) => {
+            return (
+              <Card
+                name={arr.name}
+                description={arr.caption}
+                price={arr.price}
+                image={arr.image}
+                key={arr.name}
+              ></Card>
+            );
+          })}
       </div>
       <Footer></Footer>
     </div>
