@@ -1,13 +1,14 @@
 .container {
     background-color: #F9F6F6;
-    width: 29.75rem;
+    width: 27.75rem;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 3rem 0 3.375rem 8.75rem;
+    margin: 3rem 0 3.375rem ;
     align-self: center;
+    z-index: 150;
 }
 
 .image {

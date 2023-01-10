@@ -3,10 +3,11 @@ import Header from "./Header/Header";
 import Heading from "./Heading/Heading";
 import Card from "./Card/Card";
 import Footer from "./Footer/Footer";
-import styles from './App.module.scss'
+import styles from './App.module.scss';
 
 const App = () => {
   const [data, setData] = useState([]);
+  
 
   useEffect(() => {
     const fetchedData = async () => {
@@ -27,14 +28,16 @@ const App = () => {
         return (
           <Card
             name={arr.name}
-            description={arr.description}
+            description={arr.caption}
             price={arr.price}
             image={arr.image}
+            key={arr.name}
           ></Card>
         );
       })}
       </div>
       <Footer></Footer>
+      
     </div>
   );
 };
