@@ -21,7 +21,7 @@ const App = () => {
     };
     fetchedData();
     
-    setWidth(800)
+    setWidth(1800)
   }, []);
 
 

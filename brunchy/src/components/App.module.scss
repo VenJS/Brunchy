@@ -1,10 +1,12 @@
 .card-container {
     padding-left: 2.75rem;
-    
+    cursor: grab;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
 
-.carousel::-webkit-scrollbar {
+.card-container::-webkit-scrollbar {
     width: 0; 
     background: transparent;
 }
@@ -19,8 +21,8 @@
 .carousel {
     display: flex;
     gap: 3.5rem;
-    cursor: grab;
 }
+
 
 
 @media (min-width: 31rem) {
