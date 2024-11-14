@@ -7,9 +7,9 @@ const Header = () => {
         <h1 className={styles.header}>Brunchy</h1>
         <div className={styles.wrapper}>
             <div className={styles.links}>
-                <a href='https://www.dreamshot.bg/' target="__blank"
+                <a href='https://github.com/VenJS' target="__blank"
                 rel="noopener noreferrer" className={styles.link}>About</a>
-                <a href='https://www.dreamshot.bg/' target="__blank"
+                <a href='https://github.com/VenJS' target="__blank"
                 rel="noopener noreferrer" className={styles.link}>Call us</a>
             </div>
             <div className={styles['free_delivery_logo']}>
